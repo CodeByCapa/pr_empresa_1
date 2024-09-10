@@ -63,7 +63,7 @@ CREATE TABLE `empleados` (
   PRIMARY KEY (`id_empleado`),
   KEY `id_puesto_puesto_empleados_idx` (`id_puesto`),
   CONSTRAINT `id_puesto_puesto_empleados` FOREIGN KEY (`id_puesto`) REFERENCES `puestos` (`id_puesto`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -72,7 +72,7 @@ CREATE TABLE `empleados` (
 
 LOCK TABLES `empleados` WRITE;
 /*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
-INSERT INTO `empleados` VALUES (1,'E001','Pedro','Paz Mas','Guatemala','5555','1992-01-01',1),(2,'E001','Julio','Guzman','Guatemala','222','1993-01-01',2);
+INSERT INTO `empleados` VALUES (1,'E001','Pedro','Paz Mas','Guatemala','5555','1992-01-01',1),(2,'E001','Julio','Guzman','Guatemala','222','1993-01-01',2),(5,'E003','Carlos','Solorzano','Antigua Guatemala','1234','1998-07-15',1),(6,'E004','Mario','Rojas','Mixco','1234','1988-04-22',2);
 /*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-02 16:18:57
+-- Dump completed on 2024-09-09 20:52:21
